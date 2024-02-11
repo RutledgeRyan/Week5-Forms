@@ -1,16 +1,21 @@
-header { 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }header { 
     text-align: center;
     background-color:slategray;
     color:coral}
 body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: beige;}
+    background-color: skyblue;}
 input,
 select,
 textarea,
 button {
           font-family: inherit;
           font-size: 100%;
+    
         }
         input,
         select,
@@ -38,6 +43,7 @@ input[type="checkbox"] + label {
 fieldset {
     position: relative;
     width: 600px;
+    background-color: white;
   }
   
   .Manufacturer {
@@ -62,3 +68,64 @@ h1 img {
   }
 legend {
     border-style: groove;}
+    nav .navigation {
+        margin-left: 75%;
+      }
+      nav .navigation a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        margin: 5px;
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        border: 1.5px solid #daaa00;
+        perspective: 1000px;
+        padding: 5px;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        background-color: slategray;
+        color: coral;
+      }
+      
+      .flip-card-back {
+        background-color: coral;
+        transform: rotateY(180deg);
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
