@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarFinderINC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><img src="CarFinder.png" />Car Finder Inc.</h1>
+    </header>
+    <article>
+      <!-- action="process.php" method="get" -->
+      <form
+        id="sampleForm"
+        action="process.php"
+        method="get"
+        onSubmit="return intercepter()"
+      >
+      <fieldset>
+        <legend>Vehicle Details</legend>
+        <br>
+        <div class="Manufacturer">
+        <label for="Manufacturer">Manufacturer</label>
+          <select
+              id="Manufacturer"
+              name="Manufacturer"
+              size="6"
+              style="width: 300px"
+              multiple
+            >
+            
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Honda">Honda</option>
+                <option value="Jeep">Jeep</option>
+                <option value="GMC">GMC</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Buick">Buick</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Audi">Audi</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Ford">Ford</option>
+                <option value="BMW">BMW</option>
+
+              
+            </select>
+          </div>
+          <br>
+          <br>
+          <input
+            type="radio"
+            id="Heavy Duty Truck"
+            name="BodyStyle"
+            value="Heavy Duty Truck"
+            /><label for="Heavy Duty Truck">Heavy Duty Truck</label>
+            <br>
+            <input
+            type="radio"
+            id="Light Duty Truck"
+            name="BodyStyle"
+            value="Light Duty Truck"
+            /><label for="Light Duty Truck">Light Duty Truck</label>
+            <br>
+            <input
+            type="radio"
+            id="SUV"
+            name="BodyStyle"
+            value="SUV"
+            /><label for="SUV">SUV</label>
+            <br>
+            <input
+            type="radio"
+            id="Sedan"
+            name="BodyStyle"
+            value="Sedan"
+            /><label for="Sedan">Sedan</label>
+          <br>
+            <br>
+          <label for="carColor">Choose Your Desired Color </label>
+          <input type="color" id="bcarColor" name="carColor" />
+          <br>
+            <br>
+            <input
+              type="checkbox"
+              id="4WD"
+              name="DriveOption"
+              value="4 Wheel Drive"
+            /><label for="4WD">4 Wheel Drive</label><br />
+            <input
+              type="checkbox"
+              id="AWD"
+              name="DriveOption"
+              value="All Wheel Drive"
+              checked
+            />
+            <label for="AWD">All Wheel Drive</label>
+            <br />
+            <input
+              type="checkbox"
+              id="RWD"
+              name="DriveOption"
+              value="Rear Wheel Drive"
+            /><label for="RWD">Rear Wheel Drive</label>
+          <br>
+          <br>
+          <label for="Mileage">Mileage on Vehicle
+            <select id="Mileage" name="Mileage" size="3" style="width: 150px">
+            <option value="Under25k">0-25,000 Miles</option>
+            <option value="Under50k">0-50,000 Miles</option>
+            <option value="Under75k">0-75,000 Miles</option>
+            <option value="Under100k">0-100,000 Miles</option>
+            <option value="Over100k">100,000+ Miles</option>
+          </select>
+          </label>
+      </fieldset>
+      <br>
+      <br>
+
+      <fieldset>
+        <legend>Personalization</legend>
+          <label for="License#">License Plate #</label>
+          <input
+            type="text"
+            id="License#"
+            name="License#"
+            placeholder="Enter Your Prefered License # Here"
+            size="30"
+            required
+            minlength="6"
+            maxlength="7"
+            pattern="[a-zA-Z]+([\s][a-zA-Z]+)*"
+          />
+          <br>
+          <br>
+          <label for="customerComments">
+            Customer Comments</label
+          >
+          <textarea
+            id="customerComments"
+            name="customerComments"
+            placeholder="Provide any additional comments within this sections"
+          >
+          </textarea>
+      </fieldset>
+      <br>
+      <br>
+      <input type="submit" id="process" value="Submit Search" />
+
+      
+
+      </form>
+    </article>
+  </body>
+</html>

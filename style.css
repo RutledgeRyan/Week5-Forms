@@ -1,0 +1,64 @@
+header { 
+    text-align: center;
+    background-color:slategray;
+    color:coral}
+body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;}
+input,
+select,
+textarea,
+button {
+          font-family: inherit;
+          font-size: 100%;
+        }
+        input,
+        select,
+        textarea,
+        button,
+        label {
+          box-sizing: border-box;
+        }
+        input[type="text"] {
+            width: 12em;
+            border: 5px solid coral;
+          }
+          label {
+            display: inline-block;
+            width: 10em;
+            background-color: #f1f1f1;
+          }
+          [required] {
+            border: 5px dashed red;
+          }
+          input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
+}
+fieldset {
+    position: relative;
+    width: 600px;
+  }
+  
+  .Manufacturer {
+    position: absolute;
+    top: 5%;
+    left: 270px;
+    width: 200px;
+  }
+  
+  .Manufacturer label {
+    display: block;
+  }
+h1 {
+    height:80px;
+    margin:0;
+    padding:0;
+}
+h1 img {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+  }
+legend {
+    border-style: groove;}
